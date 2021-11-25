@@ -1,5 +1,5 @@
-export function greeter(person: string): string {
-  return `Hello ${person}`
+export function greeter(person?: string): string {
+  return `Hello ${person || 'World'}`
 }
 
-console.log(greeter('World'))
+console.log(greeter())
