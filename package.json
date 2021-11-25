@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "build": "tsc",
+    "dev": "tsc-watch --onSuccess \"node ./dist/demo.js\""
   },
   "keywords": [],
   "author": "",
@@ -13,6 +15,8 @@
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
-    "husky": "^7.0.0"
+    "@tsconfig/recommended": "^1.0.1",
+    "husky": "^7.0.0",
+    "tsc-watch": "^4.5.0"
   }
 }
